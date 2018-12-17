@@ -190,7 +190,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             return false;
         case ERR:
             if (record->event.pressed) {
-                SEND_STRING("if err != nil {\n}");
+                SEND_STRING("if err != nil {\n");
             }
             return false;
         default:
